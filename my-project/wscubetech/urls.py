@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from django.shortcuts import redirect
 from wscubetech import views
 
@@ -21,5 +21,7 @@ urlpatterns = [
     path('winter/', views.winter, name='winter'),
     path('party/', views.party, name='party'),
 
+    path('admin/',admin.site.urls),
+    path('user/', include('userdata.urls'))
 ]
 
