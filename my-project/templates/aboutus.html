@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+  {% block content %}
+ 
+        <!-- About Us Page -->
+        <section id="about">
+          <div class="container">
+            <div class="about-us">
+              <h2 class="section-title">About _thelostpetals_</h2>
+              <div class="about-content">
+                <div class="about-text">
+                  <h3>Our Story</h3>
+                  <p>
+                    _thelostpetals_ was founded in 2010 with a simple mission: to
+                    provide high-quality, stylish clothing for girls that doesn't
+                    break the bank. What started as a small local store has now
+                    grown into a beloved brand with customers across the country.
+                  </p>
+                  <p>
+                    We believe every girl deserves to feel special and express
+                    her unique personality through her clothing choices.
+                  </p>
+                </div>
+                <div class="about-text">
+                  <h3>Our Values</h3>
+                  <p>
+                    We're committed to ethical manufacturing and sustainability.
+                  </p>
+                  <p>
+                    A portion of every purchase supports children’s education
+                    programs in underserved communities.
+                  </p>
+                </div>
+              </div>
+
+              <h2 class="section-title">Meet Our Team</h2>
+              <div class="team-grid">
+                <div class="team-member">
+                  <img src="{% static 'img/profile1.jpg' %}" alt="Sarah Johnson" />
+                  <h3>Sarah Johnson</h3>
+                  <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                  <img src="{% static 'img/profile2.jpg' %}" alt="Michael Chen" />
+                  <h3>Michael Chen</h3>
+                  <p>Head Designer</p>
+                </div>
+                <div class="team-member">
+                  <img src="{% static 'img/profile3.jpg' %}" alt="Jessica Williams" />
+                  <h3>Jessica Williams</h3>
+                  <p>Marketing Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+  {% endblock %}

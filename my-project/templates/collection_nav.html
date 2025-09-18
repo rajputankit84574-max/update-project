@@ -1,0 +1,40 @@
+ 
+
+<div class="collection-filters">
+    <a href="{% url 'collections' %}">
+        <button class="filter-btn {% if request.path == '/collections/' %}active{% endif %}" data-filter="all">
+            All Collections
+        </button>
+    </a>
+
+    <a href="{% url 'spring' %}">
+        <button class="filter-btn {% if request.path == '/spring/' %}active{% endif %}" data-filter="spring">
+            Spring
+        </button>
+    </a>
+
+    <a href="{% url 'summer' %}">
+        <button class="filter-btn {% if request.path == '/summer/' %}active{% endif %}" data-filter="summer">
+            Summer
+        </button>
+    </a>
+
+    <a href="{% url 'fall' %}">
+        <button class="filter-btn {% if request.path == '/fall/' %}active{% endif %}" data-filter="fall">
+            Fall
+        </button>
+    </a>
+
+    <a href="{% url 'winter' %}">
+        <button class="filter-btn {% if request.path == '/winter/' %}active{% endif %}" data-filter="winter">
+            Winter
+        </button>
+    </a>
+
+    <a href="{% url 'party' %}">
+        <button class="filter-btn {% if request.path == '/party/' %}active{% endif %}" data-filter="party">
+            Party Wear
+        </button>
+    </a>
+</div>
+ 

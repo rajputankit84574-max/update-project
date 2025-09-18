@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+      
+        {% block content %}
+
+            <div class="container">
+              <div class="featured-products">
+                <h2 class="section-title">New Arrivals</h2>
+                {% include 'collection_nav.html' %}
+                <div class="products-grid">
+                  <div class="product-card">
+                    <img src="{% static 'img/party_1.jpeg' %}" alt="Summer Dress" class="image-rounded" />
+                    <h3>Spring-collections</h3>
+                    <p class="price">$34.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="{% static 'img/party_2.jpg' %}" alt="Denim Jacket" class="image-rounded" />
+                    <h3>Spring-collections</h3>
+                    <p class="price">$42.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="{% static 'img/party_3.webp' %}" alt="Tutu Skirt" class="image-rounded" />
+                    <h3>Spring-collections</h3>
+                    <p class="price">$24.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="{% static 'img/party_4.jpeg' %}" alt="Unicorn Sweater" class="image-rounded" />
+                    <h3>Spring-collections</h3>
+                    <p class="price">$29.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+{% endblock %}

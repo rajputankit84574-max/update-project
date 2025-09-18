@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Collections Page -->
+<section id="collections">
+  <div class="container">
+    <div class="collections">
+      <h2 class="section-title">Our Collections</h2>
+
+      <div>
+         
+        {% include 'collection_nav.html' %}
+
+      </div>
+
+      <div class="collection-grid">
+        <div class="collection-card" data-category="spring">
+          <img src="{% static 'img/spring-blossom.jpg' %}" alt="Spring Collection" />
+          <div class="collection-overlay">
+            <h3>Spring Blossom</h3>
+            <p>Fresh and floral designs for spring</p>
+          </div>
+        </div>
+
+        <div class="collection-card" data-category="summer">
+          <img src="{% static 'img/sumer_sunshine.jpg' %}" alt="Summer Collection" />
+          <div class="collection-overlay">
+            <h3>Summer Sunshine</h3>
+            <p>Bright and comfortable summer outfits</p>
+          </div>
+        </div>
+
+        <div class="collection-card" data-category="fall">
+          <img src="{% static 'img/autum_leaves.webp' %}" alt="Fall Collection" />
+          <div class="collection-overlay">
+            <h3>Autumn Leaves</h3>
+            <p>Warm and cozy fall fashion</p>
+          </div>
+        </div>
+
+        <div class="collection-card" data-category="winter">
+          <img src="{% static 'img/winter_wonderland.webp' %}" alt="Winter Collection" />
+          <div class="collection-overlay">
+            <h3>Winter Wonderland</h3>
+            <p>Cozy and warm winter outfits</p>
+          </div>
+        </div>
+
+        <div class="collection-card" data-category="party">
+          <img src="{% static 'img/party_wear.jpg' %}" alt="Party Collection" />
+          <div class="collection-overlay">
+            <h3>Party Time</h3>
+            <p>Sparkling dresses for special occasions</p>
+          </div>
+        </div>
+
+        <div class="collection-card" data-category="traditional">
+          <img src="{% static 'img/traditional_wear.webp' %}" alt="Traditional Collection" />
+          <div class="collection-overlay">
+            <h3>Traditional Wear</h3>
+            <p>Elegant outfits for every cultural occasion</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

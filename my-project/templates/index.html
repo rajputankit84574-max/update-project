@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Home Page -->
+<section id="home" class="page-section active">
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Stylish Clothes for Beautiful Girls</h1>
+      <p>Discover our new collection of trendy and comfortable clothing</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Featured Products -->
+  <div class="container">
+    <div class="featured-products">
+      <h2 class="section-title">New Arrivals</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="{% static 'img/floral_summer.jpg' %}" alt="Summer Dress" class="image-rounded" />
+          <h3>Floral Summer Dress</h3>
+          <p class="price">$34.99</p>
+          <button class="btn-secondary">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="{% static 'img/sparkle_denim.webp' %}" alt="Denim Jacket" class="image-rounded" />
+          <h3>Sparkle Denim Jacket</h3>
+          <p class="price">$42.99</p>
+          <button class="btn-secondary">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="{% static 'img/tutu.webp' %}" alt="Tutu Skirt" class="image-rounded" />
+          <h3>Pink Tutu Skirt</h3>
+          <p class="price">$24.99</p>
+          <button class="btn-secondary">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="{% static 'img/unicorn_magic.webp' %}" alt="Unicorn Sweater" class="image-rounded" />
+          <h3>Unicorn Magic Sweater</h3>
+          <p class="price">$29.99</p>
+          <button class="btn-secondary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="newsletter">
+    <div class="newsletter-content">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get updates on new arrivals and special promotions</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
