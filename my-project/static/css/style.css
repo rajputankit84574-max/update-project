@@ -90,10 +90,10 @@ nav .active a{
 /* Hero Section */
 .hero {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 230, 240, 0.8)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 230, 240, 0.5)
     ),
-    url("https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80");
+    url("https://img.pikbest.com/backgrounds/20190423/autumn-women-s-clothing-on-new-literary-pink-background_1843499.jpg!sw800");
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -189,13 +189,14 @@ nav .active a{
 
 .product-card {
   background: white;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   text-align: center;
   width: 100%;           
-  height: 350px;          
-  object-fit: cover;     
+  height: 500px;          
+  object-fit: cover;
+  /* object-position: center; */
   border-radius: 8px;
   padding: 10px;
 
@@ -207,12 +208,18 @@ nav .active a{
   width: 100vw;
 }
 
+.images-rounded{
+  border-radius: 10px;
+  height: 60%;
+  width: 50%;
+  object-fit: cover;
+}
 .product-card:hover {
   transform: translateY(-5px);
 }
 
 .product-card img {
-  width: 50%;
+  width: 100%;
   
   /* object-fit:contain; */
 }
@@ -362,6 +369,7 @@ nav .active a{
 }
 
 .collection-card {
+  display: flex;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -372,7 +380,7 @@ nav .active a{
 .collection-card img {
   width: 100%;
   height: auto;          
-  object-fit: cover;
+  object-fit:contain;
   transition: transform 0.5s;
 }
 
@@ -517,7 +525,9 @@ textarea.form-control {
   background-color: #333;
   color: white;
   padding: 2rem;
+  margin-top: 20px;
 }
+ 
 
 .footer-content {
   display: grid;
@@ -578,3 +588,6 @@ textarea.form-control {
     margin-bottom: 1rem;
   }
 }
+
+
+ 

@@ -1,39 +1,69 @@
 {% extends "base.html" %}
 {% load static %}
 
-      
-        {% block content %}
 
-            <div class="container">
-              <div class="featured-products">
-                <h2 class="section-title">New Arrivals</h2>
-                {% include 'collection_nav.html' %}
-                <div class="products-grid">
-                  <div class="product-card">
-                    <img src="{% static 'img/spring_1.webp' %}" alt="Summer Dress" class="image-rounded" />
-                    <h3>Spring-collections</h3>
-                    <p class="price">$34.99</p>
-                    <button class="btn-secondary">Add to Cart</button>
-                  </div>
-                  <div class="product-card">
-                    <img src="{% static 'img/spring_2.jfif' %}" alt="Denim Jacket" class="image-rounded" />
-                    <h3>Spring-collections</h3>
-                    <p class="price">$42.99</p>
-                    <button class="btn-secondary">Add to Cart</button>
-                  </div>
-                  <div class="product-card">
-                    <img src="{% static 'img/spring_3.avif' %}" alt="Tutu Skirt" class="image-rounded" />
-                    <h3>Spring-collections</h3>
-                    <p class="price">$24.99</p>
-                    <button class="btn-secondary">Add to Cart</button>
-                  </div>
-                  <div class="product-card">
-                    <img src="{% static 'img/spring_4.webp' %}" alt="Unicorn Sweater" class="image-rounded" />
-                    <h3>Spring-collections</h3>
-                    <p class="price">$29.99</p>
-                    <button class="btn-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+{% block content %}
+
+<div class="container">
+    <h2 class="section-title">New Arrivals</h2>
+    <div>
+
+      {% include 'collection_nav.html' %}
+
+    </div>
+    <div class="featured-products">
+    <div class="featured-products">
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="{% static 'img/spring_1.webp' %}" alt="Summer Dress" class="images-rounded" />
+        <h3>Floral Summer Dress</h3>
+        <p class="price">$34.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_2.jfif' %}" alt="Denim Jacket" class="images-rounded" />
+        <h3>Sparkle Denim Jacket</h3>
+        <p class="price">$42.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_3.avif' %}" alt="Tutu Skirt" class="images-rounded" />
+        <h3>Pink Tutu Skirt</h3>
+        <p class="price">$24.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_4.webp' %}" alt="Unicorn Sweater" class="images-rounded" />
+        <h3>Unicorn Magic Sweater</h3>
+        <p class="price">$29.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="{% static 'img/spring_1.webp' %}" alt="Summer Dress" class="images-rounded" />
+        <h3>Floral Summer Dress</h3>
+        <p class="price">$34.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_2.jfif' %}" alt="Denim Jacket" class="images-rounded" />
+        <h3>Sparkle Denim Jacket</h3>
+        <p class="price">$42.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_3.avif' %}" alt="Tutu Skirt" class="images-rounded" />
+        <h3>Pink Tutu Skirt</h3>
+        <p class="price">$24.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="{% static 'img/spring_4.webp' %}" alt="Unicorn Sweater" class="images-rounded" />
+        <h3>Unicorn Magic Sweater</h3>
+        <p class="price">$29.99</p>
+        <button class="btn-secondary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
