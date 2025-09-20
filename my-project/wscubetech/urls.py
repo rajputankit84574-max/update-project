@@ -12,7 +12,7 @@ urlpatterns = [
     path('aboutus/', views.aboutus, name="aboutus"),
     path('services/', views.services, name="services"),
     path('collections/', views.collections, name="collections"),
-    path('contact/', views.contact, name="contact"),
+    # path('contact/', views.contact, name="contact"),
 
     path('collection_nav/', views.collection_nav, name="collection_nav"),
     path('spring/', views.spring, name='spring'),
@@ -22,6 +22,6 @@ urlpatterns = [
     path('party/', views.party, name='party'),
 
     path('admin/',admin.site.urls),
-    path('user/', include('userdata.urls'))
+    path('contact/', include('contact.urls'))
 ]
 
