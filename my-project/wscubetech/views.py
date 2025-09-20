@@ -14,7 +14,6 @@ def collections(request):
 
 def contact(request):
     if request.method == "POST":
-        print(request)
         name = request.POST.get('name','')
         email = request.POST.get('email','')
         subject = request.POST.get('subject','')
